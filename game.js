@@ -8,9 +8,6 @@
             arcade: {
                 debug: false
             }
-        }
-            
-
-        
+        }   
     }
 var game = new Phaser.Game(config);

@@ -6,4 +6,6 @@ This game is inspired from Cartown a facebook game made in 2010 and discontinued
 
 8.10.2022 awaiting for mongo db to allow me access to my account after not being able to log in. in the mean time i attempted to make my car start from a certain spot
 
-8.11.2022 mongo db has yet to get back to me on my account. having trouble keeping the image flipped after
+8.11.2022 mongo db has yet to get back to me on my account. having trouble keeping the image flipped after refresh
+
+8.13.2022 Still attempting to get access to my account on mongodb.
