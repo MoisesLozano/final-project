@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 require('./auth/auth');
 app.get('/game.html', passport.authenticate('jwt', { session : false }), function (req, res) {
-  res.sendFile(__dirname + '/public/game.html');
+  res.sendFile(__dirname + '/public/assets/js/game.js');
 });
 app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
@@ -45,6 +45,6 @@ app.use((err, req, res, next) => {
   res.json({ error : err });
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server started on port ${process.env.PORT || 3000}`);
+app.listen(process.env.PORT || 4000, () => {
+  console.log(`Server started on port ${process.env.PORT || 4000}`);
 });
