@@ -12,7 +12,8 @@ class Highscore extends Phaser.Scene {
       this.load.image("car", "assets/images/car.png")
   }
     create() {
-        this.scene.start("playGame");
+      //this line of code is supposed to move to my game but it never does for some reason.
+      //this.input.scene.start("playGame");
     this.add.bitmapText(100, 110, 'arcade', 'RANK  SCORE   NAME').setTint(0xffffff);
     for (let i = 1; i < 6; i++) {
       if (scores[i-1]) {
@@ -33,7 +34,7 @@ let config = {
   width: 2480,
   height: 1148,
   pixelArt: true,
-  scene: [Highscore, Scene2]
+  scene: [Highscore]
 };
 $.ajax({
   type: 'GET',

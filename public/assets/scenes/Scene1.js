@@ -1,3 +1,4 @@
+// this is supposed to be scraped 
 class Scene1 extends Phaser.Scene {
     constructor() {
         super("bootGame")
