@@ -18,8 +18,9 @@ class Highscore extends Phaser.Scene {
       } else {
         this.add.bitmapText(100, 160 + 50 * i, 'arcade', ` ${i}      0    ---`).setTint(0xffffff);
       }
+      }
+    
     }
-  }
 }
 let config = {
   type: Phaser.AUTO,
