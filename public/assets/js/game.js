@@ -1,4 +1,5 @@
 let game, scores;
+
 class Highscore extends Phaser.Scene {
   constructor() {
     super({
@@ -13,7 +14,7 @@ class Highscore extends Phaser.Scene {
   }
     create() {
       //this line of code is supposed to move to my game but it never does for some reason.
-      //this.input.scene.start("playGame");
+    this.input.MOUSESCLICK.scene.start("playGame");
     this.add.bitmapText(100, 110, 'arcade', 'RANK  SCORE   NAME').setTint(0xffffff);
     for (let i = 1; i < 6; i++) {
       if (scores[i-1]) {
@@ -26,14 +27,13 @@ class Highscore extends Phaser.Scene {
     }
 }
 function onclick() {
-    game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    game.input.keyboard.addKey(Phaser.Keyboard.MOUSECLICK);
 }
 let config = {
   type: Phaser.AUTO,
   parent: 'phaser-example',
   width: 2480,
   height: 1148,
-  pixelArt: true,
   scene: [Highscore]
 };
 $.ajax({

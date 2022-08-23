@@ -4,6 +4,7 @@ const JWTstrategy = require('passport-jwt').Strategy;
 const UserModel = require('../models/userModel');
 
 
+// signup requires email and password using the model 
 passport.use('signup', new localStrategy({
   usernameField: 'email',
   passwordField: 'password',
@@ -17,6 +18,7 @@ passport.use('signup', new localStrategy({
     done(error);
   }
 }));
+// login using the signup info that gives messages to let the user know what is wrong 
 passport.use('login', new localStrategy({
     usernameField: 'email',
     passwordField: 'password'
