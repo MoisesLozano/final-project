@@ -14,7 +14,7 @@ class Scene2 extends Phaser.Scene {
     
     //game.physics.startSystem(Phaser.Physics.ARCADE);
     //game.physics.enable(sprite, Phaser.Physics.ARCADE);
-    // wasnt able to get this to work something with my knowledge with phaser being less then average.
+    // wasnt able to get this to work with my knowledge in phaser being less then average.
     // same with the angular velocity line of code
         
     this.add.text(20, 20, "Playing Game", {

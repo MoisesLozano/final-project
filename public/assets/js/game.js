@@ -8,9 +8,11 @@ class Highscore extends Phaser.Scene {
     this.scores = [];
   }
   preload() {
-    this.load.bitmapFont('arcade', 'assets/arcade.png', 'assets/arcade.xml');
+      this.load.image("background", "Assets/background.png")
+      this.load.image("car", "assets/images/car.png")
   }
-  create() {
+    create() {
+        this.scene.start("playGame");
     this.add.bitmapText(100, 110, 'arcade', 'RANK  SCORE   NAME').setTint(0xffffff);
     for (let i = 1; i < 6; i++) {
       if (scores[i-1]) {
@@ -22,13 +24,16 @@ class Highscore extends Phaser.Scene {
     
     }
 }
+function onclick() {
+    game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+}
 let config = {
   type: Phaser.AUTO,
   parent: 'phaser-example',
-  width: 800,
-  height: 600,
+  width: 2480,
+  height: 1148,
   pixelArt: true,
-  scene: [Highscore]
+  scene: [Highscore, Scene2]
 };
 $.ajax({
   type: 'GET',
