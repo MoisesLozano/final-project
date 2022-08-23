@@ -5,14 +5,14 @@ class Scene2 extends Phaser.Scene {
 create() {
     this.background = this.add.image(0, 0, "background");
     this.background.setOrigin(0, 0);
-    this.background.displayHeight = this.sys.game.config.height;
     this.background.scaleX = this.background.scaleY
-    this.background.x = config.width / 2;
-    this.background.y = config.height / 2;
+    
 
-
-    this.car1 = this.add.image(2000, 0, "car");
+    
+    this.car1 = this.add.image(2000, 0, "car").setFlipX(true);
     this.car2 = this.add.image();
+    
+    this.car
     
         
     this.add.text(20, 20, "Playing Game", {
@@ -23,7 +23,6 @@ create() {
 moveCar(car, speed) {
     car.y += speed;
     if (car.y > config.height) {
-        car.setFlip(true, false)
         this.resetCarPos(car);
     }
     }

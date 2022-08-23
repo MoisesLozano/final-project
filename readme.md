@@ -8,4 +8,8 @@ This game is inspired from Cartown a facebook game made in 2010 and discontinued
 
 8.11.2022 mongo db has yet to get back to me on my account. having trouble keeping the image flipped after refresh
 
-8.13.2022 Still attempting to get access to my account on mongodb.
+8.13.2022 Still attempting to get access to my account on mongodb.having issues with a line of code not disappearing after it was deleted in my code. unable to view my progress of further code. I have continued to try to debug my code however nothing seems to work for 2 hours will be needing further assistance. I some how was able to fix it unsure on my results since none of what i did shouldn't have worked however i am continuing my code.
+
+8.15.2022 I finally got access to my mongodb and have started to code in my database. Have to leave to las vegas for an emergency
+
+8.23.2022 Just got back and finishing up what i didnt finish before
